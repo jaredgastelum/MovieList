@@ -1,7 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import MovieList from './Movies';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './Layout';
+import Home from './MainPage';
+import Podcast from './Podcast';
+// import Contact from './pages/Contact';
+// import NoPage from './pages/NoPage';
 
 class Welcome extends React.Component {
   render() {
@@ -26,12 +33,15 @@ function Rando() {
 function App() {
   return (
     <div>
-      <Welcome />
-      <Rando />
-      <br />
-      <Conclusion />
-
-      <MovieList />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/Podcast" element={<Podcast />} />
+            <Route path="/Movies" element={<MovieList />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
