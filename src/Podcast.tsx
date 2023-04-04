@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 function Podcast() {
   return (
     <div style={{ textAlign: 'center', margin: '200px' }}>
+      {/* LINK TO THE PODCAST WEBSITE OF JOEL */}
       <h2>
         Here is a link to my podcasts:
         <a href="https://baconsale.com/" target="_blank" rel="noreferrer">

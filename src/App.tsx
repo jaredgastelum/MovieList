@@ -30,6 +30,7 @@ function Rando() {
   );
 }
 
+//MAKE ROUTES FOR ALL OF THE PAGES WE NEED
 function App() {
   return (
     <div>

@@ -3,6 +3,7 @@ import data from './MovieData.json';
 
 const mds = data.MovieData;
 
+//MOVIE LIST
 function MovieList() {
   return (
     // THIS IS PRINTING THE MOVIE LIST
@@ -12,6 +13,7 @@ function MovieList() {
       <table className="table table-bordered table-striped">
         <thead>
           <tr>
+            {/* THESE ARE THE DIFFERENT COLUMNS WE ARE SHOWING ON OUR MOVIE LIST */}
             <th scope="col">Category</th>
             <th scope="col">Title</th>
             <th scope="col">Year</th>
@@ -21,6 +23,7 @@ function MovieList() {
           </tr>
         </thead>
 
+        {/* LOOP THROUGH THE MOVIES AND PRINT OFF THIS INFORMATION FOR EACH ONE */}
         <tbody>
           {mds.map((m) => (
             <tr>

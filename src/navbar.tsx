@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 
+//THIS IS THE NAVBAR THAT ROUTES TO THE OTHER PAGES
 function Navbar() {
   return (
     <nav className="navbar navbar-dark bg-dark mb-5">

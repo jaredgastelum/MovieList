@@ -1,7 +1,9 @@
 import React from 'react';
+// THIS IS HOW YOU IMPORT A PICTURE
 import Joel from './JoelHiltonHeadshot.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+//MAIN CONTENT FOR THE PAGE
 function Home() {
   return (
     <div className="wrapper">
@@ -16,6 +18,7 @@ function Home() {
           <div className="row">
             <div className="col-md-5 hidden-xs">
               <div className="parallax-image">
+                {/* PICTURE OF JOEL */}
                 <img
                   className=""
                   src={Joel}
